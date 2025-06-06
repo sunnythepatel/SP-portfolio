@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Blog</h1>
+  <ul>
+    {% for title, link in posts %}
+      <li><a href="/{{ link }}">{{ title.replace('-', ' ').title() }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
