@@ -1,5 +1,6 @@
 import os
 import markdown
+import shutil
 from jinja2 import Environment, FileSystemLoader
 
 # Setup Jinja2 environment
@@ -50,3 +51,16 @@ index_output = index_template.render(posts = blog_posts)
 with open('docs/blog/index.html', 'w', encoding='utf-8') as f:
     f.write(index_output)
 print("✅ Rendered to output file")
+
+# Copy css file for access
+# Define source and destination paths
+source_path = 'static/style.css'
+destination_path = 'docs/static/style.css'
+
+# Ensure the output directory exists
+os.makedirs('docs/static', exist_ok=True)
+
+# Copy the file
+shutil.copy(source_path, destination_path)
+
+print(f"Copied '{source_path}' to '{destination_path}'")
