@@ -1,3 +1,0 @@
-# Resume
-
-Here’s my experience and skills...

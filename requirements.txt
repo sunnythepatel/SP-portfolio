@@ -1,4 +1,2 @@
-markdown
-Jinja2
-MarkupSafe
-shutil
+Jinja2==3.1.4
+MarkupSafe==3.0.2
