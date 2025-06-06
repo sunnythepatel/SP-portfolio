@@ -308,6 +308,20 @@ aside li {
   white-space: nowrap;
 }
 
+button {
+  padding: 10px 16px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
 .w-0 {
   width: 0%;
 }
@@ -469,5 +483,9 @@ blockquote {
   body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+  }
+
+  button {
+    display: none;
   }
 }
